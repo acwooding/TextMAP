@@ -8,4 +8,4 @@ umap-learn
 hdbscan
 enstop
 spacy
-git+https://github.com/TutteInstitute/vectorizers.git
+git+git://github.com/TutteInstitute/vectorizers.git
