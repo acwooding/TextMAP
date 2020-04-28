@@ -44,7 +44,7 @@ install:
 
 script:
   - export NUMBA_DISABLE_JIT=1
-  - coverage run -m pytest -v --pyargs textmap -k test_docvectorizer_basic
+  - coverage run -m pytest -v --pyargs textmap -k tests
 
 after_success:
   - codecov
