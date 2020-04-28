@@ -42,8 +42,8 @@ install:
   - pip install .
 
 script:
-  - mkdir textmap/test-reports
-  - pytest -v --cov=textmap --pyargs textmap --junitxml=test-reports/junit.xml
+  - mkdir for_test
+  - pytest -v --cov=textmap --pyargs textmap  --junitxml=for_test/junit.xml
 
 after_success:
   - codecov
