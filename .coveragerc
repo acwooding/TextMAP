@@ -7,6 +7,10 @@ include = */skltemplate/*
 omit =
     */setup.py
 
+[paths]
+source =
+    /home/travis/build/*/TextMAP
+    TextMAP/
 [report]
 exclude_lines =
     pragma: no cover
