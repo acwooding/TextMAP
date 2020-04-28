@@ -38,6 +38,7 @@ install:
   - pip install pynndescent umap-learn hdbscan enstop pandas nltk spacy
   - pip install git+git://github.com/TutteInstitute/vectorizers
   - pip install codecov
+  - pip install coveralls
   - pip install .
 
 script:
@@ -47,3 +48,4 @@ script:
 
 after_success:
   - codecov
+  - coveralls
