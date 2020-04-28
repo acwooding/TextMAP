@@ -42,8 +42,8 @@ install:
   - pip install .
 
 script:
-  - mkdir for_test
-  - pytest -v --cov=textmap --pyargs textmap  --junitxml=for_test/junit.xml
+  - export NUMBA_DISABLE_JIT=1
+  - coverage run -m pytest -v --cov=textmap --pyargs textmap
 
 after_success:
   - codecov
