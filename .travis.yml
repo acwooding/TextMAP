@@ -52,9 +52,10 @@ script:
          coverage run -m pytest -v --pyargs textmap -k tests
       else
          pytest -v --pyargs textmap
-
+      fi
 after_success:
   - |
       if [ "$COVERAGE" = "true" ]; then
          codecov
          coveralls
+      fi
