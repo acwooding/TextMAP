@@ -1073,10 +1073,10 @@ class JointWordDocVectorizer(BaseEstimator, TransformerMixin):
             != self.word_cooccurrence_vectorizer_.column_label_dictionary_
         ):
             raise ValueError(
-                f"doc_vectorizer_.column_label_dictionary didn't match  word_cooccurence_vectorizer_.column_label_dictionary."
-                f"These must be identicial."
-                f"doc_vectorizer_.column_label_dictionary={self.doc_vectorizer_.column_label_dictionary}\n"
-                f"word_cooccurence_vectorizer_.column_label_dictionary = {self.word_cooccurence_vectorizer_.column_label_dictionary}"
+                f"doc_vectorizer_.column_label_dictionary_ didn't match  word_cooccurence_vectorizer_.column_label_dictionary_."
+                f"These must be identical."
+                f"doc_vectorizer_.column_label_dictionary={self.doc_vectorizer_.column_label_dictionary_}\n"
+                f"word_cooccurence_vectorizer_.column_label_dictionary = {self.word_cooccurence_vectorizer_.column_label_dictionary_}"
             )
 
         self.representation_docs_ = check_array(
